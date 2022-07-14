@@ -199,7 +199,7 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background-image: url(../img/ontario.jpg); 
+    background-image: url(./img/ontario.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
