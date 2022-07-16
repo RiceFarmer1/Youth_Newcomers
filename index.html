@@ -293,16 +293,27 @@
         <div class="col-lg-6 wow fadeInLeft delay-06s" id = "form1">
             <h2>Become a Mentor</h2>
             <div class="form">
-              <form target="_blank" action="https://formsubmit.co/3b2e416fa21bdbd5a5914bbfb168e5fe" method="POST"></form>
-                <input class="input-text" type="text" name="Name" placeholder="Enter your name" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <input class="input-text" type="email" name="Email" placeholder="Enter your email" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <input class="input-text" type="number" name="Current_Age" placeholder="Enter your current age" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <input class="input-text" type="number" name="Age_of_immigration" placeholder="Enter the age you were when you immigrated" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <input class="input-text" type="text" name="country" placeholder="Enter your country of birth" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <input class="input-text" type="text" name="" placeholder="What are your interests" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-                <textarea placeholder="Briefly describe your experience as an immigrant" class="form-control" name="message" rows="10" required></textarea>
-                <br>
-                <button type="submit">Send</button>
+              <form target="_blank" action="https://formsubmit.co/3b2e416fa21bdbd5a5914bbfb168e5fe" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="col">
+                      <input type="text" name="email" class="form-control" placeholder="Please enter your email" required>
+                    </div>
+                    <div class="col">
+                      <input type="number" name="age" class="form-control" placeholder="Please enter your age" required>
+                    </div>
+                    <div class="col">
+                      <input type="text" name="interests" class="form-control" placeholder="What are your interests" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Briefly describe your experience as an immigrant" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
                 <input type="hidden" name="_next" value="https://ricefarmer1.github.io/Youth_Newcomers/">
               </form>
             </div>
