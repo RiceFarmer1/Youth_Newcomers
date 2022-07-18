@@ -1,4 +1,23 @@
-(function ($, window, document, undefined) {
+/*
+ * jQuery One Page Nav Plugin
+ * http://github.com/davist11/jQuery-One-Page-Nav
+ *
+ * Copyright (c) 2010 Trevor Davis (http://trevordavis.net)
+ * Dual licensed under the MIT and GPL licenses.
+ * Uses the same license as jQuery, see:
+ * http://jquery.org/license
+ *
+ * @version 3.0.0
+ *
+ * Example usage:
+ * $('#nav').onePageNav({
+ *   currentClass: 'current',
+ *   changeHash: false,
+ *   scrollSpeed: 750
+ * });
+ */
+
+; (function ($, window, document, undefined) {
 
     // our plugin constructor
     var OnePageNav = function (elem, options) {
@@ -130,21 +149,28 @@
             var newLoc = '#' + self.getHash($link);
 
             if (!$parent.hasClass(self.config.currentClass)) {
-
+                //Start callback
                 if (self.config.begin) {
                     self.config.begin();
                 }
 
+                //Change the highlighted nav item
                 self.adjustNav(self, $parent);
 
+                //Removing the auto-adjust on scroll
                 self.unbindInterval();
 
+                //Scroll to the correct position
                 self.scrollTo(newLoc, function () {
+                    //Do we need to change the hash?
                     if (self.config.changeHash) {
                         window.location.hash = newLoc;
                     }
+//				$('#aboutUs').offset({'top':'60'});
+                    //Add the auto-adjust on scroll back in
                     self.bindInterval();
 
+                    //End callback
                     if (self.config.end) {
                         self.config.end();
                     }
@@ -159,11 +185,16 @@
             var position = this.getSection(windowTop);
             var $parent;
 
+            //If the position is set
             if (position !== null) {
                 $parent = this.$elem.find('a[href$="#' + position + '"]').parent();
 
+                //If it's not already the current section
                 if (!$parent.hasClass(this.config.currentClass)) {
+                    //Change the highlighted nav item
                     this.adjustNav(this, $parent);
+
+                    //If there is a scrollChange callback
                     if (this.config.scrollChange) {
                         this.config.scrollChange($parent);
                     }
