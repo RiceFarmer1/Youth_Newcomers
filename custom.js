@@ -11,17 +11,10 @@ $(document).ready(function() {
 
     });
 	
-    function resizeText() {
-        var preferredWidth = 767;
-        var displayWidth = window.innerWidth;
-        var percentage = displayWidth / preferredWidth;
-        var fontsizetitle = 25;
-        var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-        $(".divclass").css("font-size", newFontSizeTitle)
-    }
     if ($('#main-nav ul li:first-child').hasClass('active')) {
         $('#main-nav').css('background', 'none');
     }
+
     $('#mainNav').onePageNav({
         currentClass: 'active',
         changeHash: false,
@@ -39,17 +32,9 @@ $(document).ready(function() {
             }
 
         },
-        scrollChange: function($currentListItem) {
-            if (!$('#main-nav ul li:first-child').hasClass('active')) {
-                $('.header').addClass('addBg');
-            } else {
-                $('.header').removeClass('addBg');
-            }
-        }
     });
 
     var container = $('#portfolio_wrapper');
-
 
     container.isotope({
         animationEngine: 'best-available',
@@ -74,8 +59,6 @@ $(document).ready(function() {
     function splitColumns() {
         var winWidth = $(window).width(),
             columnNumb = 1;
-
-
         if (winWidth > 1024) {
             columnNumb = 4;
         } else if (winWidth > 900) {
@@ -85,7 +68,6 @@ $(document).ready(function() {
         } else if (winWidth < 479) {
             columnNumb = 1;
         }
-
         return columnNumb;
     }
 	
@@ -93,7 +75,6 @@ $(document).ready(function() {
         var winWidth = $(window).width(),
             columnNumb = splitColumns(),
             postWidth = Math.floor(winWidth / columnNumb);
-
         container.find('.portfolio-item').each(function() {
             $(this).css({
                 width: postWidth + 'px'
@@ -115,7 +96,6 @@ $(document).ready(function() {
         setProjects();
     });
 
-
 });
 
 wow = new WOW({
@@ -130,5 +110,4 @@ window.onload = function() {
     section.className = 'wow shake';
     section.className = 'wow zoomIn';
     section.className = 'wow lightSpeedIn';
-    this.parentNode.insertBefore(section, this);
 };
