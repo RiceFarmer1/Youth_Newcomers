@@ -9,9 +9,6 @@ img {
     max-width: 100%;
 }
 
-a, a:hover, a:active {
-    outline: 0px !important;
-}
 .clear {
     clear: both;
     display: block;
@@ -179,8 +176,7 @@ p {
 }
 
 .top_cont_outer {
-    background: url(./img/ontario.jpg); 
-    background-repeat: no-repeat;
+    background: url(./img/ontario.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative; 
 }
