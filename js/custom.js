@@ -123,7 +123,8 @@ wow = new WOW({
     offset: 100
 });
 wow.init();
-document.getElementById('').onclick = function() {
+
+window.onload = function() {
     var section = document.createElement('section');
     section.className = 'wow fadeInDown';
     section.className = 'wow shake';
