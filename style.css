@@ -1,7 +1,3 @@
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
-
 /* Reset
 ---------------------------------*/
 ul {
@@ -1116,9 +1112,9 @@ div.mc-image {
 /* Media Queries
 --------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
 p{
-font-size:14px;
+font-size: 15px;
 }
 .top_left_cont {
 padding: 38px 0;
@@ -1142,7 +1138,7 @@ margin-bottom:20px;
 .service_block h3 { 
 font-size: 16px;
 }
-service_block p {
+.service_block p {
 font-size: 14px; 
 margin: 0px;
 margin-bottom: 20px;
@@ -1162,18 +1158,12 @@ margin: 0 25px;
 padding: 11px 0;
 display: inline-block;
 }
-.social_links li {
-float: left; 
-}
 .contact_section{
 margin:0;
 }
 h2, .contact_section h2 {
 font-size: 30px;
 }
-.page_section.contact {
-padding: 60px 0 50px;
-} 
 .navbar-inverse .navbar-toggle .icon-bar{
 background:#005490;
 }
