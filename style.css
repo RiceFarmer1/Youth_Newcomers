@@ -92,7 +92,7 @@ p {
 }
 	
 .navbar-inverse {
-    background-color: transparent;
+    background: transparent;
     border-color: transparent;
 }
 
@@ -144,17 +144,17 @@ p {
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     color: #005490;
-    background-color: transparent;
+    background: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #005490;
-    background-color: transparent;
+    background: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
-	background-color: #005490;
+	background: #005490;
 	border-radius:5%;
 }
 
@@ -162,7 +162,7 @@ p {
 .navStyle > li.active > a:hover {
     text-decoration: none;
     color: #005490;
-    background-color: transparent;
+    background: transparent;
 }
 
 .borderLeft {
@@ -178,11 +178,8 @@ p {
     margin-top: 30px;
 }
 
-/* Top_content
----------------------------------*/
-
 .top_cont_outer {
-    background-image: url(./img/ontario.jpg); 
+    background: url(./img/ontario.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
@@ -220,7 +217,7 @@ p {
 .top_left_cont p {
     font-size: 16px;
     color: #a0d1d1;
-    background-color:rgba(0, 93, 150, 0.7);
+    background:rgba(0, 93, 150, 0.7);
     padding: 1%;
 }
 
@@ -634,7 +631,7 @@ img {
 }
 
 #contact {
-    background-color:#bedef5;
+    background:#bedef5;
     border-style: solid;
     border-radius: 2%;
     border-color: rgb(177, 42, 42)
