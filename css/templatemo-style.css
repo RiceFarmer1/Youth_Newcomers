@@ -75,14 +75,15 @@ a:focus {
 	float: right;
 	font-size: 1.75rem;
 	padding: 1rem 1.5rem;
-	background: rgba(255,255,255,0.7);
 	border-radius: 0;
 	position: absolute;
 	right: 20px;
 	top: 5px;
 }
 
-button:focus { outline: none; }
+button:focus { outline: none;}
+
+.navbar button:hover {color: grey;}
 
 .cd-slider-nav a.navbar-brand {
 	font-size: 2.5rem;
@@ -163,6 +164,7 @@ button:focus { outline: none; }
 	color: #000002;
     font-size: 1.6em;
     font-weight: 400;
+	text-align: center;
 }
 
 /* footer */
@@ -207,16 +209,16 @@ button:focus { outline: none; }
 
 .cd-hero-slider p:last-child { margin-bottom: 0; }
 
-.tm-contact-page {
+.tm-Registration-page {
 	margin: 0 auto;
 	max-width: 1190px;
 	padding: 0;
 }
 
-.tm-contact-container { max-width: 1150px; }
+.tm-Registration-container { max-width: 1150px; }
 
 .form-control,
-.tm-submit-btn {
+.submit-form {
 	font-size: 1.8rem;
 }
 .form-control {
@@ -232,8 +234,8 @@ button:focus { outline: none; }
 
 .form-group { margin-bottom: 1.5rem; }
 
-.tm-submit-btn {
-	background-color: #0066CC;
+.submit-form {
+	background-color: #889aad;
 	border: none;
 	color: white;
 	padding: 10px 50px;
@@ -242,9 +244,9 @@ button:focus { outline: none; }
 	font-size: 2.5rem;
 }
 
-.tm-submit-btn:hover,
-.tm-submit-btn:focus {
-	background-color: #2277EE;
+.submit-form:hover,
+.submit-form:focus {
+	background-color: #0066CC;
 }
 
 textarea { height: 168px; }
@@ -339,7 +341,7 @@ textarea { height: 168px; }
 
 .tm-textbox-padding { padding: 35px 30px; }
 
-.cd-hero-slider h2.tm-contact-info {
+.cd-hero-slider h2.tm-Registration-info {
 	color: black;
 	font-size: 1.4em;
 }
@@ -508,7 +510,7 @@ figure.effect-ruby:hover img {
 	.cd-full-width .container-fluid { margin-top: -80px; }
 	.cd-hero-slider h2.tm-text-title { font-size: 1.8em; }
 	.tm-textbox-padding { padding: 30px 40px; }
-	.tm-textbox-padding-contact { padding: 30px; }
+	.tm-textbox-padding-Registration { padding: 30px; }
 	.tm-img-gallery-container { 
 		margin: 40px auto 20px;
 		max-width: 680px; 
@@ -666,7 +668,7 @@ figure.effect-ruby:hover img {
 	.cd-slider-nav { top: 30px; }	
 	.cd-slider-nav nav { padding: 0 30px; }	
 	.tm-brand-icon { margin-right: 15px; }
-	.tm-contact-page { padding: 20px; }
+	.tm-Registration-page { padding: 20px; }
 	.cd-full-width .container-fluid {
 		padding-left: 20px;
 		padding-right: 20px;
