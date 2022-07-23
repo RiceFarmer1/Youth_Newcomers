@@ -45,18 +45,6 @@ a:focus {
 	padding: 0 10px;
 }
 
-.cd-slider-nav .navbar-nav {
-	display: inline-block;
-	float: none;
-	vertical-align: top;
-}
-
-.cd-slider-nav li { 
-	display: block;
-	float: none;
-	width: auto;	
-}
-
 .tm-navbar { float: right; }
 .white-bar {
 	display: -ms-flexbox;
@@ -112,13 +100,6 @@ button:focus { outline: none;}
 	vertical-align: middle;
     width: 130px;
     height: 40px;
-}
-
-.cd-slider-nav .nav-item.selected .nav-link,
-.cd-slider-nav .nav-link:hover,
-.cd-slider-nav .nav-link:focus {
-	background-color: rgba(255,255,255,1);
-	color: #5394D6;
 }
 
 /* Hero Slider */
